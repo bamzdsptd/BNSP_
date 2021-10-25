@@ -34,10 +34,11 @@
         android:layout_width="393dp"
         android:layout_height="35dp"
         android:layout_below="@+id/idRVCourses"
-        android:layout_marginTop="10dp"
-        android:text="&lt;&lt; Kembali"
         android:background="#00FF00"
-        tools:ignore="MissingConstraints" />
+        android:text="&lt;&lt; Kembali"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="531dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
