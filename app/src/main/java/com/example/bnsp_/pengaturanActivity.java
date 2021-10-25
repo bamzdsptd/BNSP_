@@ -21,16 +21,27 @@ public class pengaturanActivity extends AppCompatActivity {
 
         btnKembali = (Button) findViewById(R.id.btnKembali);
         btnSimpan = (Button) findViewById(R.id.btnSimpan);
+        pwdNow = (EditText) findViewById(R.id.pwdNow);
+        pwdNew = (EditText) findViewById(R.id.pwdNew);
         DB = new DBHelper(this);
 
 
         btnSimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), pemasukkanActivity.class);
-                        startActivity(intent);
-//                String pwNow = pwdNow.getText().toString();
 
+                String pwNow = pwdNow.getText().toString();
+                String pwNew = pwdNew.getText().toString();
+                Boolean cekpwNow = DB.checkpassword(pwNow);
+
+                if(cekpwNow == true){
+                    DB.updatePassword(pwNew);
+                    Intent intent = new Intent(getApplicationContext(), homeActivity.class);
+                    startActivity(intent);
+                }else{
+                    Intent intent = new Intent(getApplicationContext(), pengaturanActivity.class);
+                    startActivity(intent);
+                }
 //                if(pwNew.equals(" ") || pwNow.equals(" "))
 //                    Toast.makeText(pengaturanActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
 //                else {

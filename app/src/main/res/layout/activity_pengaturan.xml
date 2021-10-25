@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/profile"
         android:layout_below="@+id/btnKembali"
         android:adjustViewBounds="true"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitCenter"/>
 
     <TextView
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:text="About This APP"
         android:layout_below="@+id/btnKembali"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/imageView2"
         android:textSize="30dp"

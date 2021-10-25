@@ -40,6 +40,7 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
     public Integer total(String status){
         int fix = 0;
         SQLiteDatabase MyDB = this.getWritableDatabase();
@@ -51,6 +52,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         return fix;
     }
+
     public Boolean insertDataCashFlow(String tanggal, Integer nominal, String keterangan, String status){
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -78,11 +80,16 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public Boolean checkpassword(String password){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where password = ?", new String[] {password});
+        Cursor cursor = MyDB.rawQuery("Select * from users where password = ? and username = \"user\"", new String[] {password});
         if(cursor.getCount()>0)
             return true;
         else
             return false;
+    }
+
+    public void updatePassword(String pwdNew){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        MyDB.execSQL("UPDATE users SET password= \"" + pwdNew + "\" WHERE username = \"user\"");
     }
 
     public Boolean checkusernamepassword(String username, String password){
