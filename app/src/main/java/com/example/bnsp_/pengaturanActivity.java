@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.bnsp_.javaClass.DBHelper;
 
 public class pengaturanActivity extends AppCompatActivity {
     private Button btnKembali, btnSimpan;

@@ -4,28 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.database.Cursor;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
+
+import com.example.bnsp_.javaClass.CourseModal;
+import com.example.bnsp_.javaClass.CustomCursorAdapter;
+import com.example.bnsp_.javaClass.DBHelper;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class cashFlowActivity extends AppCompatActivity {
     private ArrayList<CourseModal> courseModalArrayList;
     DBHelper databaseHelper;
     private CustomCursorAdapter courseRVAdapter;
     private RecyclerView coursesRV;
+    private Button btnKembali;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cash_flow);
+
+        btnKembali = (Button) findViewById(R.id.btnKembali);
+
 
         courseModalArrayList = new ArrayList<>();
         databaseHelper = new DBHelper(cashFlowActivity.this);
@@ -39,6 +42,14 @@ public class cashFlowActivity extends AppCompatActivity {
         coursesRV.setLayoutManager(linearLayoutManager);
 
         coursesRV.setAdapter(courseRVAdapter);
+
+        btnKembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), homeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

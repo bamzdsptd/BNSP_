@@ -1,4 +1,4 @@
-package com.example.bnsp_;
+package com.example.bnsp_.javaClass;
 
 public class CourseModal {
 

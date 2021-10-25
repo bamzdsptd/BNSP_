@@ -1,15 +1,12 @@
-package com.example.bnsp_;
+package com.example.bnsp_.javaClass;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class DBHelper extends SQLiteOpenHelper {
     public static final String clm_id = "id";

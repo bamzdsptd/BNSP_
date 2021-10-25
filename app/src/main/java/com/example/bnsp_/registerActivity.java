@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.bnsp_.javaClass.DBHelper;
+
 public class registerActivity extends AppCompatActivity {
     EditText username, password;
     Button btnRegist;

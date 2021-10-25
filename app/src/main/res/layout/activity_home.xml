@@ -127,4 +127,14 @@
         android:layout_marginRight="67dp"
         android:textStyle="bold"/>
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="390dp"
+        android:layout_height="254dp"
+        android:layout_below="@+id/txtPengeluaran"
+        android:layout_marginTop="-33dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/grafik" />
+
 </RelativeLayout>
