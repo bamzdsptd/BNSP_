@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengaturanActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtGantiPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:text="Ganti Password"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtPasswordSaatIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGantiPassword"
+        android:layout_marginTop="10dp"
+        android:text="Password Saat Ini"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/pwdNow"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordSaatIni"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtPasswordBaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdNow"
+        android:layout_marginTop="10dp"
+        android:text="Password Baru"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/pwdNew"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswordBaru"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/pwdNew"
+        android:layout_marginTop="30dp"
+        android:text="Simpan"
+        android:background="#00FF00"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnSimpan"
+        android:layout_marginTop="10dp"
+        android:text="&lt;&lt; Kembali"
+        android:background="#00FF00"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        app:srcCompat="@drawable/profile"
+        android:layout_below="@+id/btnKembali"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="140dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About This APP"
+        android:layout_below="@+id/btnKembali"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini dibuat oleh :"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : Bambang Dwi N.R"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="17dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM : 1741720023"
+        android:layout_below="@+id/textView9"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="17dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : 25 Oktober 2021"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:textSize="17dp"
+        android:textColor="#000"/>
+</RelativeLayout>

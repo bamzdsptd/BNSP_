@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".homeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rangkuman Bulan Ini"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtPengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#F00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/txtPemasukkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#00FF00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPengeluaran"/>
+
+    <ImageButton
+        android:id="@+id/btnPemasukkan"
+        android:layout_width="155dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/txtPemasukkan"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="135dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pemasukkan" />
+
+    <ImageButton
+        android:id="@+id/btnPengeluaran"
+        android:layout_width="155dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/txtPemasukkan"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pengeluaran" />
+
+    <ImageButton
+        android:id="@+id/btnCashFlow"
+        android:layout_width="155dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/btnPemasukkan"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cashflow" />
+
+    <ImageButton
+        android:id="@+id/btnPengaturan"
+        android:layout_width="155dp"
+        android:layout_height="149dp"
+        android:layout_below="@+id/btnPengeluaran"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pemasukkan"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/btnPemasukkan"
+        android:layout_marginLeft="35dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pengeluaran"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/btnPengeluaran"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Cash Flow"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/btnCashFlow"
+        android:layout_marginLeft="53dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/btnPengaturan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="67dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

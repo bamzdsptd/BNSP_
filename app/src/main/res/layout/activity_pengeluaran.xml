@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengeluaranActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pengeluaran"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/txtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Tanggal :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/txtTanggal"/>
+
+    <ImageButton
+        android:id="@+id/btnDatePicker"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/date"
+        android:layout_alignRight="@+id/tanggal"
+        android:layout_below="@+id/txtTanggal"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/txtNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDatePicker"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Nominal :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/txtNominal"/>
+
+
+    <TextView
+        android:id="@+id/txtKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nominal"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Keterangan :"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/txtKeterangan"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/keterangan"
+        android:layout_marginTop="50dp"
+        android:text="Simpan"
+        android:background="#00FF00"/>
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnSimpan"
+        android:layout_marginTop="10dp"
+        android:text="&lt;&lt; Kembali"
+        android:background="#00FF00"/>
+</RelativeLayout>
